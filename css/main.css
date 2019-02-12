@@ -22,7 +22,7 @@ h1 {
   text-align: left; }
 
 h2 {
-  padding-top: 9%; }
+  padding-top: 7%; }
 
 nav {
   display: grid;
@@ -47,7 +47,7 @@ nav {
         text-decoration: none;
         color: black; }
       nav ul li a:hover {
-        color: red; }
+        color: #6fadba; }
 
 #aboutTxt {
   padding-bottom: 10%; }

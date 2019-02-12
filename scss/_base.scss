@@ -21,7 +21,7 @@ h1{
 	text-align: left;
 }
 h2{
-	padding-top: 9%;
+	padding-top: 7%;
 }
 
 nav{
@@ -30,7 +30,6 @@ nav{
 	grid-template-rows: 1fr ;
 	grid-template-areas:
 	"header nav";
-	// overflow: hidden;
  	background-color: white;
   	position: fixed;
   	top: 0px;
@@ -50,7 +49,7 @@ nav{
 				
 			}
 			a:hover {
-				color:red;
+				color:#6fadba;
 			}
 		}
 	}
