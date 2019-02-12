@@ -7,9 +7,7 @@ body{
 }
 
 div.vertical-line{
- 	display: block;
-  	margin-left: auto;
-  	margin-right: auto;
+ 	@include aligncenter;
 	display:flex;
     width: 3px; 
     background-color: black; /* Line color */
@@ -22,6 +20,9 @@ h1{
 	font-size:200%;
 	text-align: left;
 }
+h2{
+	padding-top: 9%;
+}
 
 nav{
 	display: grid;
@@ -29,7 +30,7 @@ nav{
 	grid-template-rows: 1fr ;
 	grid-template-areas:
 	"header nav";
-	overflow: hidden;
+	// overflow: hidden;
  	background-color: white;
   	position: fixed;
   	top: 0px;
@@ -54,6 +55,9 @@ nav{
 		}
 	}
 }
+#aboutTxt{
+	padding-bottom: 10%;
+}
 
 .parallax{
 	background-attachment:fixed;
@@ -71,7 +75,39 @@ nav{
 #projects{
 	display: grid;
 	grid-template-columns: 1fr 1fr;
-	grid-template-rows: 1fr ;
+	grid-template-rows: .5fr 1fr 1fr ;
 	grid-template-areas:
-	"header nav";
+	"project project"
+	"p1 p2"
+	"p3 p4";
+
 }
+img{
+	@include aligncenter;
+	margin-top: 2%;
+}
+img:hover{
+	opacity: .5;
+}
+#projectTitle{
+	grid-area:project;
+}
+#p1{
+	grid-area: p1;
+}
+#p2{
+	grid-area: p2;
+}
+#p3{
+	grid-area: p3;
+}
+#p4{
+	grid-area: p4;
+}
+
+
+
+
+
+
+
