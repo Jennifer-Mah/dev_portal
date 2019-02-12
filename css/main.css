@@ -1,0 +1,66 @@
+body {
+  background: white;
+  color: black;
+  font-size: 20px;
+  font-family: 'Roboto Condensed', sans-serif;
+  text-align: center; }
+
+div.vertical-line {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  width: 3px;
+  background-color: black;
+  /* Line color */ }
+
+h1 {
+  grid-area: header;
+  margin-left: 3%;
+  margin-top: 5%;
+  font-size: 200%;
+  text-align: left; }
+
+nav {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr;
+  grid-template-areas: "header nav";
+  overflow: hidden;
+  background-color: white;
+  position: fixed;
+  top: 0px;
+  width: 100%; }
+  nav ul {
+    grid-area: nav;
+    text-align: right; }
+    nav ul li {
+      list-style: none;
+      display: inline-block;
+      padding: 3%;
+      padding-top: 4%;
+      padding-right: 10%; }
+      nav ul li a {
+        font-size: 100%;
+        text-decoration: none;
+        color: black; }
+      nav ul li a:hover {
+        color: red; }
+
+.parallax {
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover; }
+
+#parallax0 {
+  height: 900px;
+  background-image: url("../img/about.jpg"); }
+
+#projects {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr;
+  grid-template-areas: "header nav"; }
+
+/*# sourceMappingURL=main.css.map */

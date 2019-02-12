@@ -1,0 +1,77 @@
+body{
+	background: $bgColor;
+	color:$txtColor;
+	font-size: $fontSiz;
+	font-family: 'Roboto Condensed', sans-serif;
+	text-align: center;
+}
+
+div.vertical-line{
+ 	display: block;
+  	margin-left: auto;
+  	margin-right: auto;
+	display:flex;
+    width: 3px; 
+    background-color: black; /* Line color */
+}
+
+h1{
+	grid-area:header;
+	margin-left:3%;
+	margin-top: 5%;
+	font-size:200%;
+	text-align: left;
+}
+
+nav{
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	grid-template-rows: 1fr ;
+	grid-template-areas:
+	"header nav";
+	overflow: hidden;
+ 	background-color: white;
+  	position: fixed;
+  	top: 0px;
+  	width: 100%;
+	ul{
+		grid-area:nav;
+		text-align:right;
+
+		li{
+			list-style:none;
+			display:inline-block;
+			padding:3%;
+			padding-top: 4%;
+			padding-right:10%;
+			a{
+				@include link;
+				
+			}
+			a:hover {
+				color:red;
+			}
+		}
+	}
+}
+
+.parallax{
+	background-attachment:fixed;
+	background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+#parallax0{
+	height: 900px;
+	background-image: url("../img/about.jpg");
+}
+
+#projects{
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	grid-template-rows: 1fr ;
+	grid-template-areas:
+	"header nav";
+}
