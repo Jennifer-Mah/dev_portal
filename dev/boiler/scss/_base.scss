@@ -1,0 +1,33 @@
+body{
+	font-family: $copyfont;
+	background: black;
+	color:white;
+}
+h1{
+	font-size:300%;
+	text-align: center;
+}
+nav{
+	display: flex;
+	justify-content: space-around;
+	font-size: 150%;
+	a{
+		@include link;
+	}
+	a:hover {
+	color:#6fadba;
+	}
+}
+
+footer{
+	font-size: 80%;
+	position: absolute;
+  	right: 0;
+  	bottom: 0;
+  	left: 0;
+  	padding: 1rem;
+  	text-align: center;
+}
+main{
+	text-align: center;
+}

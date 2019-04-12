@@ -1,0 +1,91 @@
+body{
+	background: $bgColor;
+	color:$txtColor;
+	font-size: $fontSiz;
+	font-family:$mainfont;
+	text-align: center;
+}
+
+div.vertical-line{
+ 	@include aligncenter;
+	display:flex;
+    width: 4px; 
+    background-color: black; /* Line color */
+}
+
+h1{
+	grid-area:header;
+	margin-left:3%;
+	margin-top: 5%;
+	font-size:200%;
+	text-align: left;
+}
+h2{
+	padding-top: 7%;
+}
+
+nav{
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	grid-template-rows: 1fr ;
+	grid-template-areas:
+	"header nav";
+ 	background-color: white;
+  	position: fixed;
+  	top: 0px;
+  	width: 100%;
+	ul{
+		grid-area:nav;
+		text-align:right;
+
+		li{
+			list-style:none;
+			display:inline-block;
+			padding:3%;
+			padding-top: 4%;
+			padding-right:10%;
+			a{
+				@include link;
+				
+			}
+			a:hover {
+				color:#6fadba;
+			}
+		}
+	}
+}
+#aboutTxt{
+	padding-bottom: 10%;
+}
+
+.parallax{
+	background-attachment:fixed;
+	background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+#parallax0{
+	height: 900px;
+	background-image: url("../img/about.jpg");
+}
+
+
+.thumb{
+	@include aligncenter;
+	margin-top: 2%;
+}
+.thumb:hover{
+	opacity: .5;
+}
+
+#profile{
+	max-width: 30%;
+}
+
+
+
+
+
+
